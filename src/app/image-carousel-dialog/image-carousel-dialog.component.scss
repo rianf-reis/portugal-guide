@@ -1,0 +1,14 @@
+.carousel-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  height: 100vh;
+  max-width: 70vw;
+}
+
+.carousel-dialog img {
+  flex-shrink: 0;
+  max-width: 100%;
+  object-fit: contain;
+}

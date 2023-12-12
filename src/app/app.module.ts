@@ -9,15 +9,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from './map/map.component';
 import { AgmCoreModule } from '@agm/core';
 import { MatSortModule } from '@angular/material/sort';
+import { HttpClientModule } from '@angular/common/http';
+import { ImageCarouselDialogComponent } from './image-carousel-dialog/image-carousel-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [AppComponent, SightseeingListComponent, MapComponent],
+  declarations: [
+    AppComponent,
+    SightseeingListComponent,
+    MapComponent,
+    ImageCarouselDialogComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
     MatCardModule,
     MatSortModule,
+    HttpClientModule,
+    MatDialogModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBWkfdHfAmJdUtxdEIQWTETZkxc5Ykl7uU',
     }),

@@ -6,3 +6,22 @@
 agm-map {
   height: 60vh;
 }
+
+.info-window {
+  background-color: white;
+  width: 200px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+
+    img {
+      height: 100px;
+      margin-right: 10px;
+    }
+  }
+}
