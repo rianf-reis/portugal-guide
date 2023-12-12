@@ -1,4 +1,4 @@
-<mat-table [dataSource]="sights" style="height: 85vh;">
+<mat-table [dataSource]="sights" matSort style="height: 85vh;">
   <!-- Foto Column -->
   <!-- <ng-container matColumnDef="photos">
     <mat-header-cell *matHeaderCellDef> Fotos </mat-header-cell>
@@ -16,7 +16,7 @@
     </ng-container>
 
     <ng-container matColumnDef="city">
-      <mat-header-cell *matHeaderCellDef class="small-cell"> Cidade </mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header class="small-cell"> Cidade </mat-header-cell>
       <mat-cell *matCellDef="let sight" class="small-cell"> {{sight.city}} </mat-cell>
     </ng-container>
 
@@ -31,5 +31,10 @@
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="focusOnSight(row)"></mat-row>
+    <mat-row 
+      *matRowDef="let row; columns: displayedColumns;" 
+      style="cursor: pointer;"
+      [class.selected]="row === selectedRow"
+      (click)="focusOnSight(row)">
+    </mat-row>
 </mat-table>

@@ -8,6 +8,7 @@ import { SightseeingListComponent } from './sightseeing-list/sightseeing-list.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from './map/map.component';
 import { AgmCoreModule } from '@agm/core';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [AppComponent, SightseeingListComponent, MapComponent],
@@ -16,6 +17,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserAnimationsModule,
     MatTableModule,
     MatCardModule,
+    MatSortModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBWkfdHfAmJdUtxdEIQWTETZkxc5Ykl7uU',
     }),

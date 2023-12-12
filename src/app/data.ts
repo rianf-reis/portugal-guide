@@ -263,13 +263,13 @@ lugares.push(
 // Dia 6
 lugares.push(
   {
-    name: 'Évora',
-    city: 'Évora',
+    name: 'Evora',
+    city: 'Evora',
     summary:
       'Cidade medieval bem preservada e animada, lar de uma das melhores universidades de Portugal.',
     reasons:
       'Arquitetura clássica, Templo de Diana, Catedral, Igreja de São Francisco.',
-    mapLink: 'Link do mapa de Évora aqui',
+    mapLink: 'Link do mapa de Evora aqui',
     photos: ['Link para fotos'],
     lat: 38.5713,
     lng: -7.9135,
@@ -277,7 +277,7 @@ lugares.push(
   },
   {
     name: 'Híbrido',
-    city: 'Évora',
+    city: 'Evora',
     summary:
       'Restaurante com menu criativo que combina receitas locais antigas com toques contemporâneos.',
     reasons: 'Culinária única, ambiente agradável.',
@@ -289,7 +289,7 @@ lugares.push(
   },
   {
     name: 'Jardim Público',
-    city: 'Évora',
+    city: 'Evora',
     summary: 'Passeie pelos belos jardins públicos no coração da cidade.',
     reasons: 'Áreas verdes, tranquilidade.',
     mapLink: 'Link do mapa do Jardim Público aqui',
@@ -300,7 +300,7 @@ lugares.push(
   },
   {
     name: 'Enoteca Cartuxa',
-    city: 'Évora',
+    city: 'Evora',
     summary: 'Experimente vinhos locais na maior região vinícola de Portugal.',
     reasons: 'Degustação de vinhos, atmosfera acolhedora.',
     mapLink: 'Link do mapa da Enoteca Cartuxa aqui',
