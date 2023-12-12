@@ -1,8 +1,480 @@
-// Array para armazenar os objetos dos pontos turísticos
-const lugares: any[] = [];
+// // Array para armazenar os objetos dos pontos turísticos
+// const lugares: any[] = [];
 
-// Dia 1
-lugares.push(
+// // Dia 1
+// lugares.push(
+//   {
+//     name: 'Praça Camões',
+//     city: 'Lisboa',
+//     summary: 'Comece o dia no Chiado, um dos bairros mais elegantes de Lisboa.',
+//     reasons:
+//       'Grandes edifícios, livrarias clássicas, teatros monumentais, lojas chiques.',
+//     mapLink: 'Link do mapa da Praça Camões aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7104,
+//     lng: -9.1402,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Convento do Carmo',
+//     city: 'Lisboa',
+//     summary: 'Explore o museu ao ar livre com arcos e pilares.',
+//     reasons: 'Remanescentes do terremoto de 1755, museu de arqueologia.',
+//     mapLink: 'Link do mapa do Convento do Carmo aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7119,
+//     lng: -9.1405,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Igreja de São Roque',
+//     city: 'Lisboa',
+//     summary:
+//       'Visite a igreja deslumbrante com ouro, mármore e azulejos pintados à mão.',
+//     reasons: 'Interior rico, arquitetura deslumbrante.',
+//     mapLink: 'Link do mapa da Igreja de São Roque aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7106,
+//     lng: -9.1406,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Miradouro de São Pedro de Alcântara',
+//     city: 'Lisboa',
+//     summary:
+//       'Desfrute de vistas panorâmicas sobre a cidade e o Castelo de São Jorge.',
+//     reasons: 'Belvedere bonito, jardins, esculturas.',
+//     mapLink: 'Link do mapa do Miradouro de São Pedro de Alcântara aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7161,
+//     lng: -9.144,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Rua Dom Pedro V',
+//     city: 'Lisboa',
+//     summary: 'Explore a área com uma melhor seleção de restaurantes.',
+//     reasons: 'Comida portuguesa clássica, restaurante Faz Frio.',
+//     mapLink: 'Link do mapa da Rua Dom Pedro V aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7167,
+//     lng: -9.1436,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Estação de Trem do Rossio',
+//     city: 'Lisboa',
+//     summary: 'Admire a fachada exuberante da estação de trem do Rossio.',
+//     reasons: 'Arquitetura histórica, localização central.',
+//     mapLink: 'Link do mapa da Estação de Trem do Rossio aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7146,
+//     lng: -9.1389,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Praça do Comércio',
+//     city: 'Lisboa',
+//     summary: 'Entrada régia na maior praça da Europa.',
+//     reasons: 'Arco impressionante, significado histórico.',
+//     mapLink: 'Link do mapa da Praça do Comércio aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7076,
+//     lng: -9.1368,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Alfama',
+//     city: 'Lisboa',
+//     summary:
+//       'Explore um dos bairros mais antigos de Lisboa com ruínas romanas e herança mourisca.',
+//     reasons: 'Becos medievais, catedral da Sé, Miradouro de Santa Luzia.',
+//     mapLink: 'Link do mapa de Alfama aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7119,
+//     lng: -9.1254,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Miradouro da Senhora do Monte',
+//     city: 'Lisboa',
+//     summary: 'Desfrute de vistas panorâmicas sobre a cidade.',
+//     reasons: 'Ponto mais alto, vistas panorâmicas.',
+//     mapLink: 'Link do mapa do Miradouro da Senhora do Monte aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.723,
+//     lng: -9.1275,
+//     timeOfDay: 'Noite',
+//   },
+//   {
+//     name: 'Sant’Avó',
+//     city: 'Lisboa',
+//     summary:
+//       'Termine o dia com especialidades regionais portuguesas fantásticas.',
+//     reasons: 'Atmosfera acolhedora, ambiente não turístico.',
+//     mapLink: 'Link do mapa do Sant’Avó aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.7227,
+//     lng: -9.1283,
+//     timeOfDay: 'Noite',
+//   }
+// );
+
+// // Dia 2
+// lugares.push(
+//   {
+//     name: 'Mosteiro dos Jerónimos',
+//     city: 'Lisboa',
+//     summary: 'Visite o Patrimônio Mundial da UNESCO.',
+//     reasons: 'Arquitetura manuelina, túmulo de Vasco da Gama.',
+//     mapLink: 'Link do mapa do Mosteiro dos Jerónimos aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.6977,
+//     lng: -9.206,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Clube Naval de Lisboa',
+//     city: 'Lisboa',
+//     summary:
+//       'Desfrute de peixe grelhado ou um prato clássico de frutos do mar à beira-rio.',
+//     reasons: 'Popular entre as famílias portuguesas, vista para o rio.',
+//     mapLink: 'Link do mapa do Clube Naval de Lisboa aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.6938,
+//     lng: -9.2069,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Torre de Belém',
+//     city: 'Lisboa',
+//     summary:
+//       'Explore o símbolo da grandiosa Era dos Descobrimentos de Portugal.',
+//     reasons: 'Significado histórico, localização à beira-mar.',
+//     mapLink: 'Link do mapa da Torre de Belém aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.6916,
+//     lng: -9.2163,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'MAAT - Museu de Arte, Arquitetura e Tecnologia',
+//     city: 'Lisboa',
+//     summary:
+//       'Descubra a arquitetura contemporânea e desfrute de vistas panorâmicas.',
+//     reasons: 'Design inspirado em ondas, panorama da ponte 25 de Abril.',
+//     mapLink: 'Link do mapa do MAAT aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.6976,
+//     lng: -9.2069,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Agulha no Palheiro',
+//     city: 'Lisboa',
+//     summary:
+//       'Desfrute de uma refeição aconchegante com comida deliciosa e excelente seleção de vinhos.',
+//     reasons: 'Atmosfera acolhedora, extensa seleção de vinhos.',
+//     mapLink: 'Link do mapa do Agulha no Palheiro aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.698,
+//     lng: -9.2047,
+//     timeOfDay: 'Noite',
+//   }
+// );
+
+// // Dia 3
+// lugares.push(
+//   {
+//     name: 'Milfontes',
+//     city: 'Milfontes',
+//     summary:
+//       'Desfrute de um almoço descontraído e explore a encantadora costa do Alentejo.',
+//     reasons: 'Centro histórico branco, vistas para o mar.',
+//     mapLink: 'Link do mapa de Vila Nova de Milfontes aqui',
+//     photos: ['Link para fotos'],
+//     lat: 37.7224,
+//     lng: -8.7949,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Porto das Barcas',
+//     city: 'Milfontes',
+//     summary: 'Almoce com vistas deslumbrantes sobre a dramática costa.',
+//     reasons: 'Especialidades de frutos do mar, vistas para o mar.',
+//     mapLink: 'Link do mapa do Porto das Barcas aqui',
+//     photos: ['Link para fotos'],
+//     lat: 37.72,
+//     lng: -8.8005,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Praia dos Estudantes',
+//     city: 'Lagos',
+//     summary: 'Relaxe com um copo de vinho nos bares à beira-mar ao pôr do sol.',
+//     reasons: 'Bares à beira-mar, vistas do pôr do sol.',
+//     mapLink: 'Link do mapa da Praia dos Estudantes aqui',
+//     photos: ['Link para fotos'],
+//     lat: 37.0973,
+//     lng: -8.6727,
+//     timeOfDay: 'Noite',
+//   }
+// );
+
+// // Dia 4
+// lugares.push(
+//   {
+//     name: 'Rua Silva Lopes',
+//     city: 'Lagos',
+//     summary: 'Explore o charmoso centro histórico com uma rica história.',
+//     reasons: 'Significado histórico, tour a pé gratuito.',
+//     mapLink: 'Link do mapa da Rua Silva Lopes aqui',
+//     photos: ['Link para fotos'],
+//     lat: 37.1048,
+//     lng: -8.675,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Praia do Camilo',
+//     city: 'Lagos',
+//     summary:
+//       'Visite uma das deslumbrantes praias de Lagos entre falésias e grutas.',
+//     reasons: 'Praia isolada, costa dramática.',
+//     mapLink: 'Link do mapa da Praia do Camilo aqui',
+//     photos: ['Link para fotos'],
+//     lat: 37.086,
+//     lng: -8.6709,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Gastrobar & Garrafeira Repolho',
+//     city: 'Lagos',
+//     summary:
+//       'Jante num tranquilo bar de tapas com ótima comida e uma extensa seleção de vinhos.',
+//     reasons: 'Ambiente acolhedor, vasta seleção de vinhos.',
+//     mapLink: 'Link do mapa do Gastrobar & Garrafeira Repolho aqui',
+//     photos: ['Link para fotos'],
+//     lat: 37.1046,
+//     lng: -8.6731,
+//     timeOfDay: 'Noite',
+//   }
+// );
+
+// // Dia 6
+// lugares.push(
+//   {
+//     name: 'Evora',
+//     city: 'Evora',
+//     summary:
+//       'Cidade medieval bem preservada e animada, lar de uma das melhores universidades de Portugal.',
+//     reasons:
+//       'Arquitetura clássica, Templo de Diana, Catedral, Igreja de São Francisco.',
+//     mapLink: 'Link do mapa de Evora aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.5713,
+//     lng: -7.9135,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Híbrido',
+//     city: 'Evora',
+//     summary:
+//       'Restaurante com menu criativo que combina receitas locais antigas com toques contemporâneos.',
+//     reasons: 'Culinária única, ambiente agradável.',
+//     mapLink: 'Link do mapa do Híbrido aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.5725,
+//     lng: -7.9078,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Jardim Público',
+//     city: 'Evora',
+//     summary: 'Passeie pelos belos jardins públicos no coração da cidade.',
+//     reasons: 'Áreas verdes, tranquilidade.',
+//     mapLink: 'Link do mapa do Jardim Público aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.5738,
+//     lng: -7.9077,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Enoteca Cartuxa',
+//     city: 'Evora',
+//     summary: 'Experimente vinhos locais na maior região vinícola de Portugal.',
+//     reasons: 'Degustação de vinhos, atmosfera acolhedora.',
+//     mapLink: 'Link do mapa da Enoteca Cartuxa aqui',
+//     photos: ['Link para fotos'],
+//     lat: 38.5749,
+//     lng: -7.9062,
+//     timeOfDay: 'Noite',
+//   }
+//   // Adicione mais lugares conforme necessário
+// );
+
+// // Dia 7
+// lugares.push(
+//   {
+//     name: 'Coimbra',
+//     city: 'Coimbra',
+//     summary:
+//       'Cidade histórica com uma das universidades mais antigas da Europa.',
+//     reasons: 'Arquitetura barroca, Biblioteca Joanina, Sé Velha.',
+//     mapLink: 'Link do mapa de Coimbra aqui',
+//     photos: ['Link para fotos'],
+//     lat: 40.2115,
+//     lng: -8.4292,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Taberna Almedina',
+//     city: 'Coimbra',
+//     summary:
+//       'Desfrute de pratos tradicionais portugueses em um ambiente acolhedor.',
+//     reasons: 'Comida local, atmosfera autêntica.',
+//     mapLink: 'Link do mapa da Taberna Almedina aqui',
+//     photos: ['Link para fotos'],
+//     lat: 40.2073,
+//     lng: -8.4236,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Tapas nas Costas',
+//     city: 'Coimbra',
+//     summary:
+//       'Experimente tapas deliciosas enquanto aproveita a vida estudantil vibrante.',
+//     reasons: 'Vida noturna animada, comida saborosa.',
+//     mapLink: 'Link do mapa do Tapas nas Costas aqui',
+//     photos: ['Link para fotos'],
+//     lat: 40.2107,
+//     lng: -8.4244,
+//     timeOfDay: 'Noite',
+//   }
+//   // Adicione mais lugares conforme necessário
+// );
+
+// // Dia 8
+// lugares.push(
+//   {
+//     name: 'Douro Valley',
+//     city: 'Douro Valley',
+//     summary: 'Faça uma viagem de carro relaxante pelo famoso Vale do Douro.',
+//     reasons: 'Vinhas em socalcos, Rio Douro, aldeias pitorescas.',
+//     mapLink: 'Link do mapa do Vale do Douro aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1579,
+//     lng: -7.7874,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Lamego',
+//     city: 'Douro Valley',
+//     summary:
+//       'Visite a encantadora cidade de Lamego com sua igreja barroca e escadaria impressionante.',
+//     reasons: 'Santuário de Nossa Senhora dos Remédios, vinhedos.',
+//     mapLink: 'Link do mapa de Lamego aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.0932,
+//     lng: -7.8085,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Peso da Régua',
+//     city: 'Douro Valley',
+//     summary:
+//       'Explore a cidade às margens do Rio Douro, conhecida por sua produção de vinho do Porto.',
+//     reasons: 'Museu do Vinho do Porto, paisagens deslumbrantes.',
+//     mapLink: 'Link do mapa do Peso da Régua aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1616,
+//     lng: -7.7877,
+//     timeOfDay: 'Tarde',
+//   }
+//   // Adicione mais lugares conforme necessário
+// );
+
+// // Dia 9
+// lugares.push(
+//   {
+//     name: 'Torre dos Clérigos',
+//     city: 'Porto',
+//     summary:
+//       'Obtenha vistas panorâmicas da cidade a partir da Torre dos Clérigos.',
+//     reasons: 'Arquitetura barroca, panorama da cidade.',
+//     mapLink: 'Link do mapa da Torre dos Clérigos aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1459,
+//     lng: -8.6139,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Livraria Lello',
+//     city: 'Porto',
+//     summary: 'Visite uma das livrarias mais bonitas do mundo.',
+//     reasons: 'Arquitetura única, experiência literária.',
+//     mapLink: 'Link do mapa da Livraria Lello aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1472,
+//     lng: -8.6144,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Avenida dos Aliados',
+//     city: 'Porto',
+//     summary: 'Passeie pela majestosa avenida no coração da cidade.',
+//     reasons: 'Arquitetura beaux-arts, atmosfera urbana.',
+//     mapLink: 'Link do mapa da Avenida dos Aliados aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1486,
+//     lng: -8.611,
+//     timeOfDay: 'Tarde',
+//   }
+//   // Adicione mais lugares conforme necessário
+// );
+
+// // Dia 10
+// lugares.push(
+//   {
+//     name: 'Mercado do Bolhão',
+//     city: 'Porto',
+//     summary:
+//       'Explore o famoso mercado tradicional com produtos frescos e locais.',
+//     reasons: 'Produtos regionais, ambiente animado.',
+//     mapLink: 'Link do mapa do Mercado do Bolhão aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1496,
+//     lng: -8.6112,
+//     timeOfDay: 'Manhã',
+//   },
+//   {
+//     name: 'Serralves',
+//     city: 'Porto',
+//     summary:
+//       'Descubra uma instituição cultural com jardins, museu de arte contemporânea e arquitetura única.',
+//     reasons: 'Arte contemporânea, arquitetura moderna.',
+//     mapLink: 'Link do mapa da Serralves aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.159,
+//     lng: -8.6564,
+//     timeOfDay: 'Tarde',
+//   },
+//   {
+//     name: 'Praia dos Ingleses',
+//     city: 'Porto',
+//     summary: 'Relaxe na praia à beira-mar na Foz do Douro.',
+//     reasons: 'Praia tranquila, vista para o oceano.',
+//     mapLink: 'Link do mapa da Praia dos Ingleses aqui',
+//     photos: ['Link para fotos'],
+//     lat: 41.1541,
+//     lng: -8.6743,
+//     timeOfDay: 'Tarde',
+//   }
+//   // Adicione mais lugares conforme necessário
+// );
+
+// export default lugares;
+
+const lugares: any[] = [
   {
     name: 'Praça Camões',
     city: 'Lisboa',
@@ -14,6 +486,16 @@ lugares.push(
     lat: 38.7104,
     lng: -9.1402,
     timeOfDay: 'Manhã',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/4/41/Lisbon_10064_Lisboa_Pra%C3%A7a_Lu%C3%ADs_de_Cam%C3%B5es_2006_Luca_Galuzzi.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/88/a7/1e/estatua-de-luis-de-camoes.jpg?w=1200&h=1200&s=1',
+      'https://live.staticflickr.com/7293/11904012024_5a846cab7b_b.jpg',
+      'https://www.aportugueseaffair.com/wp-content/uploads/DSC00136.jpg',
+      'https://www.golisbon.com/images/lisbon/praca-do-camoes.jpg',
+      'https://lisbonshopping.com/wp-content/uploads/2021/10/LS_Site__0004_PracaCamoes_cred-RuiRebelo.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0c/88/6d/7d/praca-luis-de-camoes.jpg',
+      'https://i.pinimg.com/564x/65/88/98/658898351cb1061b4b31cb287d242927.jpg',
+    ],
   },
   {
     name: 'Convento do Carmo',
@@ -25,6 +507,16 @@ lugares.push(
     lat: 38.7119,
     lng: -9.1405,
     timeOfDay: 'Manhã',
+    images: [
+      'https://www.lisbonportugaltourism.com/images/convento-do-carmo.jpg',
+      'https://www.lisbonguru.com/wp-content/uploads/2015/11/convento-carmo.jpg',
+      'https://images.adsttc.com/media/images/56dd/e310/e58e/ce68/3d00/0010/newsletter/arq_79600.jpg?1457382156',
+      'https://images.mnstatic.com/2f/c6/2fc6a91200f046b527ccfea14cdfbbe9.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/shutterstock_341769569_RuinasConventoCarmoLisboa_LX_Andrey%20Bayda_660.jpg?itok=tUS-WSPI',
+      'https://www.golisbon.com/images/lisbon/carmo-church.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/2/23/Convento_de_Lisboa_%28Carmo%29.jpg',
+      'https://www.golisbon.com/images/lisbon/carmo-convent.jpg',
+    ],
   },
   {
     name: 'Igreja de São Roque',
@@ -37,6 +529,16 @@ lugares.push(
     lat: 38.7106,
     lng: -9.1406,
     timeOfDay: 'Manhã',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/b/be/Exterior_of_Igreja_de_S%C3%A3o_Roque_%28Lisbon%29.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/IgrejaSaoRoque.jpg?itok=sSeZPVcp',
+      'https://upload.wikimedia.org/wikipedia/commons/3/36/Lisboa-Igreja_de_S%C3%A3o_Roque-Altar_e_ret%C3%A1bulo_de_Nostra_Senhora_da_Pi%C3%A9dade-20140917.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ea/68/bc/igreja-de-sao-roque.jpg?w=1200&h=-1&s=1',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/7c/2e.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/1/12/Igreja_de_Sao_Roque_-_panoramio.jpg',
+      'https://lisboacool.com/sites/default/files/styles/ny_article_horizontal__w720xh480_watermark/public/imagens/artigos/lisboa_cool_visitar_igreja_de_sao_roque_35.jpg?itok=aRutYMYC',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Exterior_of_Igreja_de_S%C3%A3o_Roque_%28Lisbon%29.jpg/800px-Exterior_of_Igreja_de_S%C3%A3o_Roque_%28Lisbon%29.jpg',
+    ],
   },
   {
     name: 'Miradouro de São Pedro de Alcântara',
@@ -49,6 +551,16 @@ lugares.push(
     lat: 38.7161,
     lng: -9.144,
     timeOfDay: 'Manhã',
+    images: [
+      'https://lisboacool.com/sites/default/files/styles/ny_article_horizontal__w720xh480_watermark/public/imagens/artigos/lisboacool_visitar_miradouroalcantara-5.jpg?itok=h35egPqd',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/89/08/6d/miradouro-sao-pedro-de.jpg?w=1200&h=1200&s=1',
+      'https://www.golisbon.com/images/lisbon/sao-pedro-de-alcantara.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/89/08/6d/miradouro-sao-pedro-de.jpg?w=1200&h=-1&s=1',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/7a/9e.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/c/c5/Lisbonne_-_Miradouro_de_S%C3%A3o_Pedro_de_Alc%C3%A2ntara.jpg',
+      'https://www.lisbonportugaltourism.com/images/miradouro-sao-pedro-alcantara.jpg',
+      'https://getlisbon.com/wp-content/uploads/2020/11/01-jardim-sao-pedro-alcantara-getlisbon.jpg',
+    ],
   },
   {
     name: 'Rua Dom Pedro V',
@@ -60,6 +572,16 @@ lugares.push(
     lat: 38.7167,
     lng: -9.1436,
     timeOfDay: 'Tarde',
+    images: [
+      'https://www.thelisbonconnection.com/wp-content/uploads/2008/07/rua-dom-pedro-5-jacarandas.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/1/15/Rua_Dom_Pedro_v_%2814399885281%29.jpg',
+      'https://live.staticflickr.com/1725/28497887828_519c99c489_b.jpg',
+      'https://cdn.travel-in-portugal.com/sites/default/files/photos/dom_pedro_v_houses.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/02/1f/e8/4a/view-of-rua-dom-pedro.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Rua_Dom_Pedro_v_%2814399885281%29.jpg/640px-Rua_Dom_Pedro_v_%2814399885281%29.jpg',
+      'https://live.staticflickr.com/1806/42849650091_910c673b36_b.jpg',
+      'https://toponimialisboa.files.wordpress.com/2013/07/rua-dom-pedro-v-2.jpg',
+    ],
   },
   {
     name: 'Estação de Trem do Rossio',
@@ -71,6 +593,16 @@ lugares.push(
     lat: 38.7146,
     lng: -9.1389,
     timeOfDay: 'Tarde',
+    images: [
+      'https://descubralisboa.com/wp-content/uploads/2018/07/Fachada-Esta%C3%A7%C3%A3o-do-Rossio.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/EstacaoRossioLisboa.JPG/280px-EstacaoRossioLisboa.JPG',
+      'https://offloadmedia.feverup.com/lisboasecreta.co/wp-content/uploads/2021/11/04044443/estac%CC%A7a%CC%83o-do-rossio-%40ruralea.jpeg',
+      'https://www.nacionalidadeportuguesa.com.br/wp-content/uploads/2021/06/Estac%CC%A7o%CC%83es-de-trem-em-Portugal.jpg',
+      'https://offloadmedia.feverup.com/lisboasecreta.co/wp-content/uploads/2021/11/04044445/estac%CC%A7a%CC%83o-do-rossio-%40_nattiiiiii.jpeg',
+      'https://images.turismoenportugal.org/Estacao-do-Rossio-Lisboa.jpg',
+      'https://offloadmedia.feverup.com/lisboasecreta.co/wp-content/uploads/2021/11/04044444/estac%CC%A7a%CC%83o-do-rossio-%40juliopereiramusic.jpeg',
+      'https://descubralisboa.com/wp-content/uploads/2018/07/Cais-da-Esta%C3%A7%C3%A3o-do-Rossio_montagem.jpg',
+    ],
   },
   {
     name: 'Praça do Comércio',
@@ -82,6 +614,16 @@ lugares.push(
     lat: 38.7076,
     lng: -9.1368,
     timeOfDay: 'Tarde',
+    images: [
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/N4.OTR1435D.jpg?itok=ZTyjukOg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/83/Lisbon_main_square_%2836622604910%29.jpg',
+      'https://media.cntraveler.com/photos/5bce1d5f06957f77f66121c7/16:9/w_2560,c_limit/Prac%CC%A7a%20do%20Come%CC%81rcio_GettyImages-655529048.jpg',
+      'https://lisbonlisboaportugal.com/images/400alfamabaixa/praca-do-comercio-lisbon-lisboa-lisbonne.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8c/e7/e2/vista-centrale.jpg?w=1200&h=1200&s=1',
+      'https://i.ytimg.com/vi/hIrfeqoH_9E/maxresdefault.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/large/public/mediateca/N4.OTR1435D.jpg?itok=sHvoCDyg',
+      'https://i.redd.it/icpaoesdhrr81.jpg',
+    ],
   },
   {
     name: 'Alfama',
@@ -94,6 +636,16 @@ lugares.push(
     lat: 38.7119,
     lng: -9.1254,
     timeOfDay: 'Tarde',
+    images: [
+      'https://lisboacool.com/sites/default/files/styles/ny_article_horizontal__w720xh480_watermark/public/imagens/artigos/lisboacool_visitar_bairroalfama_13.jpg?itok=2_Se4c9h',
+      'https://upload.wikimedia.org/wikipedia/commons/0/0a/Alfama_lisboa.jpg',
+      'https://www.civitatis.com/f/portugal/lisboa/free-tour-barrio-alfama-589x392.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5a/Alfama_-_Lisboa_-_Portugal_%2850019501412%29.jpg',
+      'https://lisbonlisboaportugal.com/images/650x450/miradouro-de-santa-luzia-lisbon.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Alfama_-_Lisboa_-_Portugal_%2850019501412%29.jpg/1536px-Alfama_-_Lisboa_-_Portugal_%2850019501412%29.jpg',
+      'https://lisboacool.com/sites/default/files/styles/ny_article_vertical__w345xh520_watermark/public/imagens/galeria/lisboacool_visitar_bairroalfama_43.jpg?itok=UjaIGuz5',
+      'https://www.lisbonportugaltourism.com/images/miradouro-de-santa-luzia-lisboa.jpg',
+    ],
   },
   {
     name: 'Miradouro da Senhora do Monte',
@@ -105,6 +657,16 @@ lugares.push(
     lat: 38.723,
     lng: -9.1275,
     timeOfDay: 'Noite',
+    images: [
+      'https://media.cntraveler.com/photos/5bce278dd3112f75d8d1840b/16:9/w_2560,c_limit/Miradouro%20da%20Senhora%20do%20Monte_GettyImages-626539909.jpg',
+      'https://www.lisbonportugaltourism.com/images/miradouro-da-senhora-do-monte.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/2a/b3/f3/bela-cidade.jpg?w=1200&h=-1&s=1',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/a2/72.jpg',
+      'https://www.homelisbonhostel.com/homelisbon-wb2019/wp-content/uploads/2019/12/Miradouro_Nossa_Senhora_do_Monte_II.jpg',
+      'https://cdn.travel-in-portugal.com/sites/default/files/attractions/miradouro-senhora-monte.jpg',
+      'https://c8.alamy.com/comp/HYBJ4E/lissabon-miradouro-da-senhora-do-monte-HYBJ4E.jpg',
+      'https://lisbonlisboaportugal.com/images/650-alfama/miradouro-da-senhora-do-monte-lisbon.jpg',
+    ],
   },
   {
     name: 'Sant’Avó',
@@ -117,11 +679,17 @@ lugares.push(
     lat: 38.7227,
     lng: -9.1283,
     timeOfDay: 'Noite',
-  }
-);
-
-// Dia 2
-lugares.push(
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-p/13/0c/69/97/photo1jpg.jpg',
+      'https://lh3.googleusercontent.com/eRdoczJOmzXsp3AwW2rOyryxRJ82I8Zbg5MNo16T3YseSjIwIgi3BTTH3tIw1YMjrnAtbazIDDeCPkGjWvNaIZL8VLj7MK-n6w=s600-c',
+      'https://media-cdn.tripadvisor.com/media/photo-s/2a/9f/6f/2b/caption.jpg',
+      'https://lh3.googleusercontent.com/eRdoczJOmzXsp3AwW2rOyryxRJ82I8Zbg5MNo16T3YseSjIwIgi3BTTH3tIw1YMjrnAtbazIDDeCPkGjWvNaIZL8VLj7MK-n6w=s1200',
+      'https://media-cdn.tripadvisor.com/media/photo-s/2a/23/6f/df/balcao.jpg',
+      'https://lh3.googleusercontent.com/eRdoczJOmzXsp3AwW2rOyryxRJ82I8Zbg5MNo16T3YseSjIwIgi3BTTH3tIw1YMjrnAtbazIDDeCPkGjWvNaIZL8VLj7MK-n6w=s1400',
+      'https://media-cdn.tripadvisor.com/media/photo-s/1a/01/d8/1c/photo0jpg.jpg',
+      'https://www.tiktok.com/api/img/?itemId=7270265641276329247&location=0&aid=1988',
+    ],
+  },
   {
     name: 'Mosteiro dos Jerónimos',
     city: 'Lisboa',
@@ -132,6 +700,16 @@ lugares.push(
     lat: 38.6977,
     lng: -9.206,
     timeOfDay: 'Manhã',
+    images: [
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/Lisboa-Jeronimos-Shutterstock-MartinLehmann-Visit3.jpg?itok=eyblAp8-',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/The_Jer%C3%B3nimos_Monastery_or_Hieronymites_Monastery.png/1200px-The_Jer%C3%B3nimos_Monastery_or_Hieronymites_Monastery.png',
+      'https://cdn.visitportugal.com/sites/default/files/styles/large/public/mediateca/Lisboa-Jeronimos-JoaoHenriques-Amatar-Visit.jpg?itok=Z2DwkAqy',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mosteiro_dos_Jeronimos_-_Left_Wing.jpg/1200px-Mosteiro_dos_Jeronimos_-_Left_Wing.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/destinos_galeria/public/mediateca/Lisboa-Jeronimos-JoaoHenriques-Amatar-Visit.jpg?itok=9VO6lZn5',
+      'https://media.istockphoto.com/id/503153299/photo/jeronimos-monastery.jpg?s=612x612&w=0&k=20&c=S28mSLxKV4EW91daG-0VZhsRNWb9TztfHiE-RwC4vHY=',
+      'https://cdn.visitportugal.com/sites/default/files/styles/large/public/mediateca/Lisboa-ClaustroJeronimos-Sshutterstock-ManuelHurtado-Visit1.jpg?itok=MvX_VyYt',
+      'https://lp-cms-production.imgix.net/2019-06/bd7887076bf662849c7ffd575ddeb75b-mosteiro-dos-jeronimos.jpg',
+    ],
   },
   {
     name: 'Clube Naval de Lisboa',
@@ -144,6 +722,16 @@ lugares.push(
     lat: 38.6938,
     lng: -9.2069,
     timeOfDay: 'Tarde',
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/10/90/b7/02/esplanada.jpg',
+      'https://img2.10bestmedia.com/Images/Photos/369032/River-2_55_660x440.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100039734152710',
+      'https://img2.10bestmedia.com/Images/Photos/369031/River-1_55_660x440.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/10/f0/26/0e/club-naval-de-lisboa.jpg',
+      'https://c8.alamy.com/comp/FD9356/restaurant-clube-naval-de-lisboa-naval-club-riverside-promenade-belem-FD9356.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/18/6b/ba/28/img-20190722-122345-largejpg.jpg',
+      'https://www.crwflags.com/fotw/images/p/pt~cnl.gif',
+    ],
   },
   {
     name: 'Torre de Belém',
@@ -156,6 +744,16 @@ lugares.push(
     lat: 38.6916,
     lng: -9.2163,
     timeOfDay: 'Tarde',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Torre_Bel%C3%A9m_April_2009-4a.jpg/640px-Torre_Bel%C3%A9m_April_2009-4a.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/3f/e6/89/torre-de-belem.jpg?w=1200&h=1200&s=1',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Torre_Bel%C3%A9m_April_2009-4a.jpg/1200px-Torre_Bel%C3%A9m_April_2009-4a.jpg',
+      'https://www.lisbon.net/f/portugal/lisboa/guia/torre-belem-m.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/c7/a7/cc/caption.jpg?w=300&h=300&s=1',
+      'https://www.lisbon.net/f/portugal/lisboa/guia/torre-belem.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/fc/Torre_de_Bel%C3%A9m%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_20.JPG',
+      'https://lisbonlisboaportugal.com/images/400pxbelem/torre-de-belem-lisbon-1.jpg',
+    ],
   },
   {
     name: 'MAAT - Museu de Arte, Arquitetura e Tecnologia',
@@ -168,6 +766,16 @@ lugares.push(
     lat: 38.6976,
     lng: -9.2069,
     timeOfDay: 'Tarde',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/0/0e/MAAT_%28Museu_de_Arte%2C_Arquitetura_e_Tecnologia%29_-_Lisboa_-_Portugal_%2840653259375%29.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/DIA2_MAAT_PAC_099_Credit%20Paulo%20Coelho%20-%20Funda%C3%A7%C3%A3o%20EDP_660x371_2.jpg?itok=pdzgxva3',
+      'https://live.staticflickr.com/7807/31571467327_ae1d3c77a5_b.jpg',
+      'https://www.hotelavenidapalace.pt/media/hotel-avenida-palace-bannermaat-site.jpg',
+      'http://convida.pt/images/POIs/MAAT-ConVida2016-01a.jpg',
+      'https://images.adsttc.com/media/images/5840/2116/e58e/ce9e/1900/01c8/large_jpg/FranciscoNogueiraAL_A-MAAT10029.jpg?1480597774',
+      'https://upload.wikimedia.org/wikipedia/commons/5/5f/MAAT_-_Museu_de_Arte_%2C_Arquitetura_%2C_Tecnologia_._Lisboa_%2C_Portugal._%2830138055846%29.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/a0/92/50/paulasoares87.jpg?w=1200&h=-1&s=1',
+    ],
   },
   {
     name: 'Agulha no Palheiro',
@@ -180,11 +788,17 @@ lugares.push(
     lat: 38.698,
     lng: -9.2047,
     timeOfDay: 'Noite',
-  }
-);
-
-// Dia 3
-lugares.push(
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/1d/23/1f/76/photo1jpg.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100038654487002',
+      'https://media-cdn.tripadvisor.com/media/photo-s/1d/bb/d9/f3/caption.jpg',
+      'https://images.xceed.me/restaurants/covers/agulha-no-palheiro-restaurant-lisboa-xceed285f.jpeg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/12/0e/12/f4/agulha-no-palheiro.jpg',
+      'https://s3-media0.fl.yelpcdn.com/bphoto/QhfDrt00b_mDco4LjsVa_Q/348s.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0a/11/98/62/nota-10-atendimento-qualidade.jpg',
+      'https://images.xceed.me/restaurants/logos/agulha-no-palheiro-restaurant-lisboa-xceed-logo584c.jpeg',
+    ],
+  },
   {
     name: 'Milfontes',
     city: 'Milfontes',
@@ -196,6 +810,16 @@ lugares.push(
     lat: 37.7224,
     lng: -8.7949,
     timeOfDay: 'Manhã',
+    images: [
+      'https://lp-cms-production.imgix.net/2022-03/iStock-1185749931%20RFC.jpg?auto=format&w=1920&h=640&fit=crop&crop=faces,edges&q=75',
+      'https://www.littlelareyloves.com/wp-content/uploads/2018/07/Vila-Nova-10.jpg',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/470807334.jpg?k=975f572f7ca66ac744fdc70834962afa30026a02ca31443cbedb646f22c1f50b&o=&hp=1',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/d3/0b/06/selina-milfontes.jpg?w=700&h=-1&s=1',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/200646435.jpg?k=7cbc79a9edfd915fa5d412c947ffbb571d510e07bf41f6a8ad8443f366432c9f&o=&hp=1',
+      'https://a0.muscache.com/im/pictures/40e0a2e7-3653-42cf-8044-46107dde72d9.jpg?im_w=720',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/215376915.jpg?k=4b18c58826a7b225ffc28dedb192fff650bf7d961e96f9d6b205a186c24f5ed9&o=&hp=1',
+      'https://www.littlelareyloves.com/wp-content/uploads/2018/07/Vila-Nova-5.jpg',
+    ],
   },
   {
     name: 'Porto das Barcas',
@@ -207,6 +831,16 @@ lugares.push(
     lat: 37.72,
     lng: -8.8005,
     timeOfDay: 'Tarde',
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/07/ee/92/9a/porto-das-barcas.jpg',
+      'https://guia.vnmilfontes.info/wp-content/uploads/2012/06/porto_das_barcas_milfontes.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0e/51/a2/f7/restaurant-from-the-front.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3172404159681773',
+      'https://cdn.travel-in-portugal.com/sites/default/files/beaches/porto-das-barcas.jpg',
+      'https://live.staticflickr.com/2531/3927953167_24cfd78fc4_b.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/1c/3b/d3/73/almoco-divinal.jpg',
+      'https://www.shutterstock.com/image-photo/porto-das-barcas-beach-vilanova-260nw-2383533899.jpg',
+    ],
   },
   {
     name: 'Praia dos Estudantes',
@@ -218,11 +852,17 @@ lugares.push(
     lat: 37.0973,
     lng: -8.6727,
     timeOfDay: 'Noite',
-  }
-);
-
-// Dia 4
-lugares.push(
+    images: [
+      'https://roadtofreedomblog.com/wp-content/uploads/2020/05/LRM_EXPORT_527458593357401_20191011_231840899-min-1440x810.jpeg',
+      'https://www.lagosportugaltourism.com/images/praia-dos-estudantes-lagos.jpg',
+      'https://roadtofreedomblog.com/wp-content/uploads/2020/05/20191011_120002-min-1440x877.jpg',
+      'https://thealgarvefamily.com/wp-content/uploads/2022/05/praia-dos-estudantes-roman-bridge-lagos.jpg',
+      'https://c8.alamy.com/comp/T6J334/aerial-view-series-of-parallel-seaside-cliffs-at-praia-dos-estudantes-students-beach-roman-bridge-in-the-foreground-lagos-algarve-portugal-T6J334.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d0/32/0b/praia-dos-estudantes.jpg?w=1200&h=1200&s=1',
+      'https://live.staticflickr.com/1928/44701304065_521fab3eb1_b.jpg',
+      'https://www.algarvetips.com/wp-content/uploads/2020/03/Praia-dos-Estudantes-and-bridge-over-the-beach.jpg',
+    ],
+  },
   {
     name: 'Rua Silva Lopes',
     city: 'Lagos',
@@ -233,6 +873,16 @@ lugares.push(
     lat: 37.1048,
     lng: -8.675,
     timeOfDay: 'Manhã',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/5/53/Rua_Silva_Lopes%2C_Lagos%2C_Portugal.jpg',
+      'https://c8.alamy.com/comp/2AXKGPF/rua-silva-lopes-leading-to-the-igreja-de-santo-antnio-lagos-portugal-2AXKGPF.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/4/48/Rua_Silva_Lopes%2C_Lagos_%2815193851393%29.jpg',
+      'https://c8.alamy.com/comp/R69E2Y/rua-silva-lopes-in-the-historic-center-of-lagos-R69E2Y.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/d/d3/Rua_Silva_Lopes%2C_Lagos_%2826263773810%29.jpg',
+      'https://correiodelagos.com/site/assets/files/4738/a_rua_silva_lopes_1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Rua_Silva_Lopes%2C_Lagos_%2815193851393%29.jpg/1280px-Rua_Silva_Lopes%2C_Lagos_%2815193851393%29.jpg',
+      'https://c8.alamy.com/comp/S46HE5/rua-silva-lopes-in-lagos-portugal-S46HE5.jpg',
+    ],
   },
   {
     name: 'Praia do Camilo',
@@ -245,6 +895,16 @@ lugares.push(
     lat: 37.086,
     lng: -8.6709,
     timeOfDay: 'Tarde',
+    images: [
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/shutterstock_279519770_PraiaCamiloLagos_AG_PX_Pawel%20Kazmierczak_660x371.jpg?itok=d13l5V-j',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/50/09/0c/img-20170515-205829-727.jpg?w=1200&h=-1&s=1',
+      'https://www.algarvetips.com/wp-content/uploads/2020/05/Praia-do-Camilo-and-entrance-with-staircase.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/50/09/0c/img-20170515-205829-727.jpg?w=1200&h=1200&s=1',
+      'https://thealgarvefamily.com/wp-content/uploads/2022/03/Praia-do-Camilo-Lagos.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/large/public/mediateca/shutterstock_279519770_PraiaCamiloLagos_AG_PX_Pawel%20Kazmierczak_660x371.jpg?itok=YL7cC68o',
+      'https://www.lagosportugaltourism.com/images/praia-do-camilo-lagos.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=5095954357108491',
+    ],
   },
   {
     name: 'Gastrobar & Garrafeira Repolho',
@@ -257,11 +917,17 @@ lugares.push(
     lat: 37.1046,
     lng: -8.6731,
     timeOfDay: 'Noite',
-  }
-);
-
-// Dia 6
-lugares.push(
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-p/17/7e/ef/60/photo0jpg.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=747535273290428',
+      'https://media-cdn.tripadvisor.com/media/photo-s/17/3e/58/48/photo0jpg.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=908782346255281',
+      'https://media-cdn.tripadvisor.com/media/photo-p/16/2f/1e/2e/alguns-dos-nosso-petiscos.jpg',
+      'https://i0.wp.com/jetsettimes.com/wp-content/uploads/2022/05/FACEBOOK-Repolho-Gastrobar-Garrafeira.jpeg?resize=800%2C800&ssl=1',
+      'https://media-cdn.tripadvisor.com/media/photo-s/17/7e/ef/60/photo0jpg.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1341467819653396',
+    ],
+  },
   {
     name: 'Evora',
     city: 'Evora',
@@ -274,6 +940,16 @@ lugares.push(
     lat: 38.5713,
     lng: -7.9135,
     timeOfDay: 'Manhã',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/3/32/Pra%C3%A7a_de_Giraldo%2C_Evora_%2810250693386%29_%28cropped%29.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/experiencias_detalhe/public/mediateca/N2400d.jpg?itok=ROyJnt43',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/31/a2/dd/photo3jpg.jpg?w=700&h=500&s=1',
+      'http://www.visitevora.net/en/assets/uploads/2015/12/visit-evora.jpg',
+      'https://media.autoexpress.co.uk/image/private/s--qjxrgEzf--/v1676042904/evo/2023/02/Lotus%20Evora%20main.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/e/ef/S%C3%A9_%C3%89vora.JPG',
+      'https://whc.unesco.org/uploads/thumbs/site_0361_0016-750-750-20151104161636.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/S%C3%A9_%C3%89vora.JPG/1200px-S%C3%A9_%C3%89vora.JPG',
+    ],
   },
   {
     name: 'Híbrido',
@@ -286,6 +962,16 @@ lugares.push(
     lat: 38.5725,
     lng: -7.9078,
     timeOfDay: 'Tarde',
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/1d/05/77/5a/favas-morcela-hortela.jpg',
+      'https://cdn.website.dish.co/media/af/8b/3723594/Hibrido-IMG-7797-JPG.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-p/1d/05/77/5a/favas-morcela-hortela.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063671166259',
+      'https://cdn.website.dish.co/media/40/a7/3723722/Hibrido-IMG-0197-JPG.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/2a/8b/3a/f1/frango-do-campo.jpg',
+      'https://res.cloudinary.com/tf-lab/image/upload/w_276,h_216,c_fill,g_auto:subject,q_auto,f_auto/restaurant/3cc4d883-64d3-4728-9e95-2a0943100ac6/07ca0f34-4615-4226-af3c-aad50cbae8af.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/1d/5b/6b/cc/caption.jpg',
+    ],
   },
   {
     name: 'Jardim Público',
@@ -297,6 +983,16 @@ lugares.push(
     lat: 38.5738,
     lng: -7.9077,
     timeOfDay: 'Tarde',
+    images: [
+      'https://www.evoraportugaltourism.com/images/coreto-evora.jpg',
+      'https://photo620x400.mnstatic.com/971c1f95f1041d08d2f01eab542b0266/jardim-publico-de-evora.jpg',
+      'http://www.visitevora.net/en/assets/uploads/2014/01/public-park-evora.jpg',
+      'https://www.visitevora.net/wp-content/uploads/2014/01/Jardim-Publico-Evora-1-3-600x330.jpg',
+      'https://www.destinations-in-europe.com/wp-content/uploads/2021/08/jardim-publico.jpg',
+      'https://www.evoraportugaltourism.com/images/jardim-publico-evora.jpg',
+      'https://media.istockphoto.com/id/911292216/photo/view-to-ruinas-fingidas-at-jardim-publico-in-evora-portugal.jpg?s=170667a&w=0&k=20&c=1CW_aKGXAXm3w2lNTjSvrD35F3bryshZslThD1vlpaY=',
+      'https://catbirdineurope.files.wordpress.com/2013/07/p7178570.jpg',
+    ],
   },
   {
     name: 'Enoteca Cartuxa',
@@ -308,12 +1004,17 @@ lugares.push(
     lat: 38.5749,
     lng: -7.9062,
     timeOfDay: 'Noite',
-  }
-  // Adicione mais lugares conforme necessário
-);
-
-// Dia 7
-lugares.push(
+    images: [
+      'https://media.cntraveler.com/photos/5be092d7dd9fc604c4ec24e5/16:9/w_2560,c_limit/Enoteca-Cartuxa_20180321-Enoteca-Cartuxa-JS-8387.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0e/1d/fe/73/enoteca-cartuxa.jpg',
+      'https://www.cartuxa.pt/wp-content/uploads/cartuxa-main-image-enoteca-small.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0c/37/5a/f4/prato-enoteca-cartuxa.jpg',
+      'https://media.cntraveler.com/photos/5be092d890e25c2d60bee081/16:9/w_2560%2Cc_limit/Enoteca-Cartuxa_20180321-Enoteca-Cartuxa-JS-8400.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0f/03/1a/dd/enoteca-cartuxa.jpg',
+      'https://lightson.pt/wp-content/uploads/2016/07/ENOTECA-2-1024x678.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/18/ab/6c/01/enoteca-cartuxa.jpg',
+    ],
+  },
   {
     name: 'Coimbra',
     city: 'Coimbra',
@@ -325,6 +1026,16 @@ lugares.push(
     lat: 40.2115,
     lng: -8.4292,
     timeOfDay: 'Manhã',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/c/cd/Coimbra_e_o_rio_Mondego_%286167200429%29_%28cropped%29.jpg',
+      'https://myportugalholiday.com/images/1300/coimbra-portugal-1300.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Coimbra_e_o_rio_Mondego_%286167200429%29_%28cropped%29.jpg/1200px-Coimbra_e_o_rio_Mondego_%286167200429%29_%28cropped%29.jpg',
+      'https://lp-cms-production.imgix.net/2019-06/464668787_full.jpg?auto=format&w=1920&h=640&fit=crop&crop=faces,edges&q=75',
+      'https://cdn.britannica.com/16/161216-050-8B93D807/section-University-of-Coimbra-Portugal.jpg',
+      'https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/017/403/medium/f48afcc980ca84993f4027f060232e1f/portugal-coimbra-street-040215-az.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/experiencias_detalhe/public/mediateca/N2204d.jpg?itok=cwaXrTLL',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/ec/42/8e/universidade-de-coimbra.jpg?w=700&h=500&s=1',
+    ],
   },
   {
     name: 'Taberna Almedina',
@@ -337,6 +1048,16 @@ lugares.push(
     lat: 40.2073,
     lng: -8.4236,
     timeOfDay: 'Tarde',
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/19/df/0c/3d/pratos-quentes.jpg',
+      'https://www.hoteloslo-coimbra.pt/en/wp-content/uploads/11.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/19/65/2d/92/experiencia-de-degustacao.jpg',
+      'https://s3-media0.fl.yelpcdn.com/bphoto/S-P5TaZmQT9LdvV_DpVLQg/348s.jpg',
+      'https://c8.alamy.com/comp/2AF399F/arco-de-almedina-the-gateway-to-the-ancient-walled-city-coimbra-portugal-2AF399F.jpg',
+      'https://s3-media0.fl.yelpcdn.com/bphoto/2LSATrzQRIrie8RMpPMVuw/348s.jpg',
+      'https://assets.untappd.com/photos/2022_10_05/61534e7ff288e0549ec2d3872190b48f_640x640.jpg',
+      'https://s3-media0.fl.yelpcdn.com/bphoto/nDrWKG0Q4ZnY9-Mlk_UofA/348s.jpg',
+    ],
   },
   {
     name: 'Tapas nas Costas',
@@ -349,12 +1070,17 @@ lugares.push(
     lat: 40.2107,
     lng: -8.4244,
     timeOfDay: 'Noite',
-  }
-  // Adicione mais lugares conforme necessário
-);
-
-// Dia 8
-lugares.push(
+    images: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/07/b7/43/34/bistro-cafe-tapas-nas.jpg',
+      'https://www.hoteloslo-coimbra.pt/en/wp-content/uploads/restaurant-coimbra-tapas-nas-costas.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/07/b7/44/17/bistro-cafe-tapas-nas.jpg',
+      'https://s3-media0.fl.yelpcdn.com/bphoto/rlMxC7TlLLWFvPWjsM_fIg/348s.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/11/3b/4a/1e/carta-menu.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/b7/43/34/bistro-cafe-tapas-nas.jpg?w=600&h=-1&s=1',
+      'https://media-cdn.tripadvisor.com/media/photo-s/0e/2b/6b/66/tapas.jpg',
+      'https://s3-media0.fl.yelpcdn.com/bphoto/MitY-VJz194kjxpegcWg4A/348s.jpg',
+    ],
+  },
   {
     name: 'Douro Valley',
     city: 'Douro Valley',
@@ -365,6 +1091,16 @@ lugares.push(
     lat: 41.1579,
     lng: -7.7874,
     timeOfDay: 'Manhã',
+    images: [
+      'https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/026/122/medium/61dceb046daa563c52bd2a876bf781a3/portugal-douro-valley-terraces-070419-az.jpg',
+      'https://www.travelandleisure.com/thmb/mjS8JAJvjONC0CCnBD7ftO5NArs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/six-senses-douro-valley-DOURO1016-727b72f009fc407090348add13947f35.jpg',
+      'https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/026/122/original/61dceb046daa563c52bd2a876bf781a3/portugal-douro-valley-terraces-070419-az.jpg',
+      'https://cdn.britannica.com/75/243375-050-784FE362/Locator-map-Douro-River.jpg',
+      'https://www.onegirlwholeworld.com/wp-content/uploads/2022/01/quinta_nova_winery_IMG_7914.jpg',
+      'https://media.cntraveler.com/photos/586fe21120b4cd2a4c33e895/16:9/w_2560,c_limit/Pool-SixSensesDuoroValley-Portugal-CRHotel.jpg',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/53158114.jpg?k=38a39d28d78762d774653c32976aa85df931fe847b47171df0adae756a10c171&o=&hp=1',
+      "https://media.cntraveler.com/photos/6193d3cf49b1d4a10720e367/16:9/w_2560%2Cc_limit/Wine%2520O'Clock_DEC21_the%2520Scenic%2520Azure%2520on%2520the%2520Douro_Credit%2520Scenic%2520Azure_Scenic-Azure.jpg",
+    ],
   },
   {
     name: 'Lamego',
@@ -377,6 +1113,16 @@ lugares.push(
     lat: 41.0932,
     lng: -7.8085,
     timeOfDay: 'Tarde',
+    images: [
+      'https://edh9qmimf4g.exactdn.com/wp-content/uploads/2016/08/View-of-Lamego-from-sanctuary.jpg?strip=all&lossy=1&ssl=1',
+      'https://www.golisbon.com/images/portugal/lamego.jpg',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/53159451.jpg?k=b54fc4c22200da30c7f73efbbab0bcad3413355dabac06d43d23ef2ce71ca569&o=&hp=1',
+      'https://builder.livingtours.com/public/images/produtos/9tLULtBlIWprod_188289_slide.jpg',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/107246825.jpg?k=d16dabc2e3b7f948ef5ad505d27f7eafe18a2b0e61d25cf2e5ca89eb41e63678&o=&hp=1',
+      'https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1097785.jpg',
+      'https://i0.wp.com/juliedawnfox.com/wp-content/uploads/2016/08/Insider-guide-to-Lamego-Portugal.jpg?resize=372%2C800&ssl=1',
+      'https://cdn.travel-in-portugal.com/sites/default/files/photos/lamego-sanctuary-nossa-senhora.jpg',
+    ],
   },
   {
     name: 'Peso da Régua',
@@ -389,12 +1135,17 @@ lugares.push(
     lat: 41.1616,
     lng: -7.7877,
     timeOfDay: 'Tarde',
-  }
-  // Adicione mais lugares conforme necessário
-);
-
-// Dia 9
-lugares.push(
+    images: [
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/N4.LOC1190d.jpg?itok=vFYIxWV9',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/ba/26/7b/dsc-0756-largejpg.jpg?w=700&h=-1&s=1',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/28/e2.jpg',
+      'https://portugaltravelguide.com/wp-content/uploads/2022/06/Peso-da-Regua.jpg',
+      'https://cdn.thecrazytourist.com/wp-content/uploads/2018/01/River-.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/ba/26/7b/dsc-0756-largejpg.jpg?w=500&h=400&s=1',
+      'https://media-cdn.tripadvisor.com/media/photo-s/18/e1/c5/c7/vista-panoramica.jpg',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/245434098.jpg?k=5057d6d547ec014d56db9fcd278e883c66e00ec0f96bf9ff844f6aac3e5f56da&o=&hp=1',
+    ],
+  },
   {
     name: 'Torre dos Clérigos',
     city: 'Porto',
@@ -406,6 +1157,16 @@ lugares.push(
     lat: 41.1459,
     lng: -8.6139,
     timeOfDay: 'Manhã',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/2/2d/Torre_de_los_Cl%C3%A9rigos%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/ae/18/17/torre-de-los-clerigos.jpg?w=1200&h=1200&s=1&cx=1250&cy=821&chk=v1_63aacc650342946a8f49',
+      'https://www.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/Clerigos.gif?itok=0EFrM-0Z',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/ae/18/17/torre-de-los-clerigos.jpg?w=1200&h=-1&s=1&cx=1250&cy=821&chk=v1_63aacc650342946a8f49',
+      'https://porto-north-portugal.com/images/650x450/torre-dos-clerigos-porto.jpg',
+      'https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/ib3676af0686219c9/version/1460897444/torre-dos-cl%C3%A9rigos-porto-portugal.jpg',
+      'https://media.timeout.com/images/103791372/image.jpg',
+      'https://porto-north-portugal.com/images/650x450/torre-dos-clerigos-view.jpg',
+    ],
   },
   {
     name: 'Livraria Lello',
@@ -417,6 +1178,16 @@ lugares.push(
     lat: 41.1472,
     lng: -8.6144,
     timeOfDay: 'Manhã',
+    images: [
+      'https://www.livrarialello.pt/media/cache/B32_highlight_repeatable/uploads/sobre/20200610_3435_Lello.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/fa/10/7d/20200910-113406-largejpg.jpg?w=1200&h=1200&s=1',
+      'https://whimsysoul.com/wp-content/uploads/2021/08/Whimsy-Soul-Livraria-Lello-Harry-Potter-Bookstore-202.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/fa/10/7d/20200910-113406-largejpg.jpg?w=1200&h=-1&s=1',
+      'https://upload.wikimedia.org/wikipedia/commons/b/b4/A_Livraria_Lello_e_Irm%C3%A3o-A_ponte_de_encanto.jpg',
+      'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=615140607329675',
+      'https://www.onegirlwholeworld.com/wp-content/uploads/2021/11/livraria_lello_porto_IMG_8682.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/A_Livraria_Lello_e_Irm%C3%A3o-A_ponte_de_encanto.jpg/640px-A_Livraria_Lello_e_Irm%C3%A3o-A_ponte_de_encanto.jpg',
+    ],
   },
   {
     name: 'Avenida dos Aliados',
@@ -428,12 +1199,17 @@ lugares.push(
     lat: 41.1486,
     lng: -8.611,
     timeOfDay: 'Tarde',
-  }
-  // Adicione mais lugares conforme necessário
-);
-
-// Dia 10
-lugares.push(
+    images: [
+      'https://www.ulysses.travel/wp-content/uploads/2020/01/Avenida-dos-Aliados-Porto.jpg',
+      'https://www.gooporto.com/images/porto/avenida-dos-aliados.jpg',
+      'https://www.ulysses.travel/wp-content/uploads/2020/01/Avenida-dos-Aliados-Porto-Ho%CC%82tel-de-Ville-908x1024.jpg',
+      'https://porto.travel/wp-content/uploads/sites/17/2019/05/av-dos-aliados.jpg',
+      'https://www.ulysses.travel/wp-content/uploads/2020/01/Avenida-dos-Aliados-Porto-1920x1441.jpg',
+      'https://travel.usnews.com/images/avenida-getty_B2xnpNw.jpg',
+      'https://cdn.travel-in-portugal.com/sites/default/files/styles/x_large/public/photos/porto-town-hall.jpg',
+      'https://www.portobay.com/remote.axd/pbaybucket.s3.amazonaws.com/media/2849521/comdireitos_i_stock_po_av_aliados_1.jpg?mode=crop&width=1920&height=823',
+    ],
+  },
   {
     name: 'Mercado do Bolhão',
     city: 'Porto',
@@ -445,6 +1221,16 @@ lugares.push(
     lat: 41.1496,
     lng: -8.6112,
     timeOfDay: 'Manhã',
+    images: [
+      'https://www.stirworld.com/images/article_gallery/mercado-do-bolh-atilde-o-market-in-porto-portugal-restored-by-nuno-valentim-arquitectura-stirworld-230808051809.jpg',
+      'https://localporto.com/wp-content/uploads/mercado-bolhao.jpg',
+      'https://images.culinarybackstreets.com/wp-content/uploads/cb_porto_rt_bolhao_final_exterior.jpg?lossy=1&w=2560&ssl=1',
+      'https://c8.alamy.com/comp/PRWAJ7/cafe-in-bolhao-market-mercado-do-bolhao-porto-portugal-PRWAJ7.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Bolh%C3%A3o2023.jpg/800px-Bolh%C3%A3o2023.jpg',
+      'https://c8.alamy.com/comp/F61WB5/mercado-do-bolhao-traditional-market-in-porto-porte-e-norte-portugal-F61WB5.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/06/ff/8d/hotel-ibis-porto-center.jpg?w=700&h=-1&s=1',
+      'https://www.ahstatic.com/photos/a7j9_ho_00_p_1024x768.jpg',
+    ],
   },
   {
     name: 'Serralves',
@@ -457,6 +1243,16 @@ lugares.push(
     lat: 41.159,
     lng: -8.6564,
     timeOfDay: 'Tarde',
+    images: [
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fundaci%C3%B3n_Serralves_o_palacete_de_Miami.jpg/300px-Fundaci%C3%B3n_Serralves_o_palacete_de_Miami.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/N21013.jpg?itok=JTMGNATB',
+      'https://accidentallywesanderson.com/wp-content/uploads/2020/04/casa-serralves-porto-scaled.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/0/0d/Fundaci%C3%B3n_Serralves_o_palacete_de_Miami.jpg',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/67/30.jpg',
+      'https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/N2122d.jpg?itok=dwo27lIq',
+      'https://www.architecturalrecord.com/ext/resources/Issues/2020/10-October/Treetop-Walkway-01-B.jpg?1601998578',
+      'https://www.iconichouses.org/foto/houses/serralves.jpg',
+    ],
   },
   {
     name: 'Praia dos Ingleses',
@@ -468,8 +1264,17 @@ lugares.push(
     lat: 41.1541,
     lng: -8.6743,
     timeOfDay: 'Tarde',
-  }
-  // Adicione mais lugares conforme necessário
-);
+    images: [
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/9a/b8/31/praia-dos-ingleses.jpg?w=1200&h=1200&s=1',
+      'https://cdn.travel-in-portugal.com/sites/default/files/photos/foz_beach_cafe.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/9a/b8/31/praia-dos-ingleses.jpg?w=1200&h=-1&s=1',
+      'https://localporto.com/wp-content/uploads/praiaingleses_1.png',
+      'https://media-cdn.tripadvisor.com/media/photo-s/14/a3/71/d9/praia-dos-ingleses.jpg',
+      'https://live.staticflickr.com/2341/32149926583_31c550d619_b.jpg',
+      'https://cdn.travel-in-portugal.com/sites/default/files/styles/x_large/public/photos/foz_beach_cafe.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/07/ee/99/9d/praia-dos-ingleses.jpg',
+    ],
+  },
+];
 
 export default lugares;

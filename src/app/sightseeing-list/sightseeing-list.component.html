@@ -1,13 +1,16 @@
 <mat-table [dataSource]="sights" matSort class="table">
   <!-- Foto Column -->
-  <!-- <ng-container matColumnDef="photos">
-    <mat-header-cell *matHeaderCellDef> Fotos </mat-header-cell>
+  <ng-container matColumnDef="photo">
+    <mat-header-cell *matHeaderCellDef> Foto </mat-header-cell>
     <mat-cell *matCellDef="let sight">
-      <mat-card *ngFor="let photo of sight.photos">
-        <img mat-card-image [src]="photo" alt="{{ sight.name }}">
-      </mat-card>
+        <img 
+          mat-card-image 
+          [src]="sight.images[0]"
+          alt="{{ sight.name }}"
+          style="max-height: 100px;"
+          (click)="openDialog(sight); $event.stopPropagation()">
     </mat-cell>
-  </ng-container> -->
+  </ng-container>
 
   <!-- Other columns... -->
     <ng-container matColumnDef="name">

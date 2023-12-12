@@ -8,6 +8,8 @@ import {
 import { MapService } from '../map.service';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatDialog } from '@angular/material/dialog';
+import { ImageCarouselDialogComponent } from '../image-carousel-dialog/image-carousel-dialog.component';
 
 @Component({
   selector: 'app-sightseeing-list',
@@ -21,15 +23,9 @@ export class SightseeingListComponent implements OnInit, AfterViewInit {
 
   selectedRow: any;
 
-  displayedColumns: string[] = [
-    // 'photos',
-    'name',
-    'city',
-    'summary',
-    'reasons',
-  ];
+  displayedColumns: string[] = ['photo', 'name', 'city', 'summary', 'reasons'];
 
-  constructor(private mapService: MapService) {}
+  constructor(private mapService: MapService, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.sights.data = this.allSights;
@@ -42,5 +38,11 @@ export class SightseeingListComponent implements OnInit, AfterViewInit {
   focusOnSight(sight: any): void {
     this.mapService.focusOnSight(sight);
     this.selectedRow = sight;
+  }
+
+  openDialog(sight: any) {
+    const dialogRef = this.dialog.open(ImageCarouselDialogComponent, {
+      data: { images: sight.images },
+    });
   }
 }

@@ -15,6 +15,7 @@ export class MapComponent implements OnInit {
   @Input() sights!: any[];
   map: google.maps.Map | undefined;
 
+  focusedSight: any;
   center: any = {
     lat: 38.7223,
     lng: -9.1393,
@@ -39,10 +40,7 @@ export class MapComponent implements OnInit {
   }
 
   focusOnSight(sight: any): void {
-    this.center = {
-      lat: sight.lat,
-      lng: sight.lng,
-    };
+    this.panToMarker(sight);
     this.zoomIn();
   }
 
@@ -63,22 +61,27 @@ export class MapComponent implements OnInit {
     this.zoom = zoom;
   }
 
-  getImages(sight: any, infoWindow: any) {
-    this.openInfoWindows.forEach((window) => window.close());
-    this.openInfoWindows = [];
-    this.openInfoWindows.push(infoWindow);
+  async getAllImages() {
+    // Crie um array de promessas, uma para cada chamada getImages
+    const promises = this.sights.map((sight) => this.getImages(sight));
 
-    // this.center = {
-    //   lat: sight.lat + 0.001,
-    //   lng: sight.lng,
-    // };
+    // Espere todas as promessas serem resolvidas
+    await Promise.all(promises);
 
-    if (this.map)
-      this.map.panTo({
-        lat: sight.lat + 0.001,
-        lng: sight.lng,
-      });
+    // Imprima a lista atualizada de sights
+    console.log(this.sights);
+  }
 
+  panToMarker(sight: any) {
+    this.focusedSight = sight;
+
+    this.map?.panTo({
+      lat: sight.lat + 0.001,
+      lng: sight.lng,
+    });
+  }
+
+  getImages(sight: any) {
     if (sight.images) return;
 
     const url = `https://www.googleapis.com/customsearch/v1`;
