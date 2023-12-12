@@ -7,6 +7,12 @@ agm-map {
   height: 60vh;
 }
 
+@media (min-width: 768px) {
+  agm-map {
+    height: 100vh;
+  }
+}
+
 .info-window {
   background-color: white;
   width: 200px;

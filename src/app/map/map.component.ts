@@ -1,8 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+/// <reference types="@types/googlemaps" />
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MapService } from '../map.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageCarouselDialogComponent } from '../image-carousel-dialog/image-carousel-dialog.component';
+import { AgmMap } from '@agm/core';
 
 @Component({
   selector: 'app-map',
@@ -11,11 +13,14 @@ import { ImageCarouselDialogComponent } from '../image-carousel-dialog/image-car
 })
 export class MapComponent implements OnInit {
   @Input() sights!: any[];
+  map: google.maps.Map | undefined;
 
+  center: any = {
+    lat: 38.7223,
+    lng: -9.1393,
+  };
   openInfoWindows: any[] = [];
   zoom = 9;
-  latitude = 38.7223;
-  longitude = -9.1393;
 
   constructor(
     private mapService: MapService,
@@ -29,9 +34,15 @@ export class MapComponent implements OnInit {
     });
   }
 
+  onMapReady(map: google.maps.Map) {
+    this.map = map;
+  }
+
   focusOnSight(sight: any): void {
-    this.latitude = sight.lat;
-    this.longitude = sight.lng;
+    this.center = {
+      lat: sight.lat,
+      lng: sight.lng,
+    };
     this.zoomIn();
   }
 
@@ -56,6 +67,17 @@ export class MapComponent implements OnInit {
     this.openInfoWindows.forEach((window) => window.close());
     this.openInfoWindows = [];
     this.openInfoWindows.push(infoWindow);
+
+    // this.center = {
+    //   lat: sight.lat + 0.001,
+    //   lng: sight.lng,
+    // };
+
+    if (this.map)
+      this.map.panTo({
+        lat: sight.lat + 0.001,
+        lng: sight.lng,
+      });
 
     if (sight.images) return;
 

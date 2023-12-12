@@ -1,11 +1,12 @@
 <div>
   <agm-map
-    [latitude]="latitude"
-    [longitude]="longitude" 
+    [latitude]="center.lat"
+    [longitude]="center.lng" 
     [zoom]="zoom"
     [disableDefaultUI]="false"
     [zoomControl]="false"
-    (zoomChange)="onZoomChange($event)">
+    (zoomChange)="onZoomChange($event)"
+    (mapReady)="onMapReady($event)">
     <!-- <agm-marker *ngFor="let sight of sights" [latitude]="sight.lat" [longitude]="sight.lng"></agm-marker> -->
 
     <agm-marker *ngFor="let sight of sights" [latitude]="sight.lat" [longitude]="sight.lng" (markerClick)="getImages(sight, infoWindow)">
