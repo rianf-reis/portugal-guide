@@ -1,4 +1,4 @@
-<mat-table [dataSource]="sights" matSort style="height: 85vh;">
+<mat-table [dataSource]="sights" matSort class="table">
   <!-- Foto Column -->
   <!-- <ng-container matColumnDef="photos">
     <mat-header-cell *matHeaderCellDef> Fotos </mat-header-cell>
@@ -16,8 +16,8 @@
     </ng-container>
 
     <ng-container matColumnDef="city">
-      <mat-header-cell *matHeaderCellDef mat-sort-header class="small-cell"> Cidade </mat-header-cell>
-      <mat-cell *matCellDef="let sight" class="small-cell"> {{sight.city}} </mat-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header class="small-cell  mat-column-city"> Cidade </mat-header-cell>
+      <mat-cell *matCellDef="let sight" class="small-cell  mat-column-city"> {{sight.city}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="summary">

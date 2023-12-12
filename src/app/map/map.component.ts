@@ -29,10 +29,18 @@ export class MapComponent implements OnInit {
 
   zoomIn() {
     const interval = setInterval(() => {
-      // Pare o zoom quando atingir o nível de zoom desejado
-      if (this.zoom >= 16) {
+      if (this.zoom == 16) {
         clearInterval(interval);
+        return;
+      }
+
+      if (this.zoom > 16) {
+        this.zoom--;
       } else this.zoom++;
     }, 200);
+  }
+
+  onZoomChange(zoom: number) {
+    this.zoom = zoom;
   }
 }

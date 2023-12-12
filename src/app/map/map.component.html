@@ -4,7 +4,8 @@
     [longitude]="longitude" 
     [zoom]="zoom"
     [disableDefaultUI]="false"
-    [zoomControl]="false">
+    [zoomControl]="false"
+    (zoomChange)="onZoomChange($event)">
     <agm-marker *ngFor="let sight of sights" [latitude]="sight.lat" [longitude]="sight.lng"></agm-marker>
   </agm-map>
 </div>

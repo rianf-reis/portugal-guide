@@ -1,5 +1,9 @@
-.mat-column-city {
-  width: 80px !important;
+.mat-column-city,
+.mat-column-name,
+.mat-column-summary, 
+.mat-column-reasons {
+  padding: 0 !important;
+  border-right: solid 1px #ccc !important;
 }
 
 .mat-cell-city {
@@ -8,4 +12,8 @@
 
 .selected {
   background-color: #CFD8DC !important;
+}
+
+.mat-cell, .mat-header-cell {
+  padding: 0 !important;
 }
