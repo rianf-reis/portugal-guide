@@ -1,5 +1,5 @@
 // Array para armazenar os objetos dos pontos turísticos
-const lugares = [];
+const lugares: any[] = [];
 
 // Dia 1
 lugares.push(
